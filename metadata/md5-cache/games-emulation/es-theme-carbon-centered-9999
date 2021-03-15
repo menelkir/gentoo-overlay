@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=EmulationStation theme carbon centered
+EAPI=7
+HOMEPAGE=https://github.com/RetroPie/es-theme-carbon-centered
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=CC-BY-NC-SA-2.5
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_md5_=3b9314f4b45d4c49da3ec7f41ed852d4

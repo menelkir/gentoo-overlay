@@ -1,0 +1,10 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=Collection of slang shaders for vulkan backends.
+EAPI=7
+HOMEPAGE=https://github.com/libretro/slang-shaders
+LICENSE=GPL-3
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	libretro	e2e72840da02ef2a21e935c8447187a8
+_md5_=791f623bc2d667b7a57f19fa91d9ac42

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-libs/openssl:* net-libs/libpcap
+DESCRIPTION=WLAN tools for bruteforcing 802.11 WPA/WPA2 keys
+EAPI=7
+HOMEPAGE=http://www.willhackforsushi.com/?page_id=50
+KEYWORDS=amd64 x86
+LICENSE=BSD
+RDEPEND=dev-libs/openssl:* net-libs/libpcap
+SLOT=0
+SRC_URI=https://github.com/joswr1ght/cowpatty/archive/4.8.tar.gz -> cowpatty-4.8.tar.gz
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	l10n	8cdd85e169b835d518bc2fd59f780d8e	wrapper	4251d4c84c25f59094fd557e0063a974
+_md5_=522f722b7353efb9d6a1ff46b711cf4a

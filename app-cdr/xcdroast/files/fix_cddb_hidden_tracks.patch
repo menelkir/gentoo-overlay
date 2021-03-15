@@ -1,0 +1,13 @@
+diff '--color=auto' -ruN xcdroast.orig/src/io.c xcdroast/src/io.c
+--- xcdroast.orig/src/io.c	2019-11-10 21:57:31.645100231 -0300
++++ xcdroast/src/io.c	2019-11-10 22:04:34.722133007 -0300
+@@ -8550,6 +8550,9 @@
+ 		if (extract_quoted(tmp) != 0) 
+ 			return (TRUE);
+ 
++		if (matchnr == 0 && trackinfo[matchnr]->track_nr == 0)
++			matchnr++;
++
+ 		/* now add decoded string to clist */
+ 		rowdata[0] = convert_for_gtk2(tmp);
+ 		gtk_clist_append(cddb_clist,rowdata);

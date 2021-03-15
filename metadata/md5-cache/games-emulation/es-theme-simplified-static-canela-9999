@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=EmulationStation theme simplified-static-canela
+EAPI=7
+HOMEPAGE=https://github.com/RetroPie/es-theme-simplified-static-canela
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=CC-BY-NC-SA-2.0
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_md5_=7159e6bd24cec7c521c8bdd20bd28545

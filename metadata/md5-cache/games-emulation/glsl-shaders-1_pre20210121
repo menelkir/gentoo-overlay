@@ -1,0 +1,13 @@
+DEFINED_PHASES=install preinst
+DEPEND=!<=games-emulation/libretro-common-shaders-1
+DESCRIPTION=glsl shaders converted by hand from libretro's common-shaders repo
+EAPI=7
+HOMEPAGE=https://github.com/libretro/glsl-shaders
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=!<=games-emulation/libretro-common-shaders-1
+RESTRICT=primaryuri
+SLOT=0
+SRC_URI=https://github.com/libretro/glsl-shaders/archive/6c01a86dac2f40d9aa0f19b17ccd4e6393c45fd0.tar.gz -> glsl-shaders-1_pre20210121.tar.gz
+_eclasses_=libretro	e2e72840da02ef2a21e935c8447187a8
+_md5_=c1d32fa5c6d0c75b13553b641964ba8e

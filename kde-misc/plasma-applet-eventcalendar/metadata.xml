@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>menelkir@itroll.org</email>
+		<name>Daniel Menelkir</name>
+	</maintainer>
+	<upstream>
+		<bugs-to>https://github.com/Zren/plasma-applet-eventcalendar/issues/</bugs-to>
+		<doc>https://github.com/Zren/plasma-applet-eventcalendar/blob/master/ReadMe.md</doc>
+	</upstream>
+</pkgmetadata>

@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install postinst unpack
+DEPEND=sys-apps/openrc:=
+DESCRIPTION=Plymouth plugin for OpenRC
+EAPI=7
+HOMEPAGE=https://github.com/aidecoe/plymouth-openrc-plugin
+LICENSE=GPL-2+
+PROPERTIES=live
+RDEPEND=sys-apps/openrc:= sys-boot/plymouth
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_md5_=3e6500919c8a67afa179cf4885687015

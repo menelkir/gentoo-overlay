@@ -1,0 +1,12 @@
+diff '--color=auto' -ruN xcdroast.orig/src/init.c xcdroast/src/init.c
+--- xcdroast.orig/src/init.c	2019-11-10 21:57:31.645100231 -0300
++++ xcdroast/src/init.c	2019-11-10 22:01:45.498119897 -0300
+@@ -830,7 +830,7 @@
+ 		language = g_strdup("");
+ 	debug = 0;
+ 	*altdevscan = 1;
+-	no_versioncheck = 0;
++	no_versioncheck = 1;
+ 	c_locale_is_utf8 = 0;
+ 	ignoreProDVD = 0;
+ 	alt_dev_string = NULL;

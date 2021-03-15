@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DEPEND=app-arch/cpio app-arch/gzip app-arch/xz-utils net-misc/curl sys-apps/coreutils
+DESCRIPTION=Firmware for the Apple Facetime HD Camera
+EAPI=7
+HOMEPAGE=https://www.apple.com
+KEYWORDS=~amd64
+LICENSE=APPLE_LICENSE
+RDEPEND=app-arch/cpio app-arch/gzip app-arch/xz-utils net-misc/curl sys-apps/coreutils
+SLOT=0
+_md5_=8170abf24a558342c87b440ad7b9179e
