@@ -166,3 +166,9 @@ libretro-core_src_install() {
 		fi
 	done
 }
+
+# Not all libretro cores support custom-cflags
+
+if [[ ${PN} == "blastem-libretro" ]] || [[ ${PN} == "psp1-libretro" ]] || [[ ${PN} == "citra-libretro" ]]; then
+    USE="-custom-cflags"
+fi

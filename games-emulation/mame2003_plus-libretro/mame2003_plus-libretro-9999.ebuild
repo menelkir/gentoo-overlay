@@ -17,6 +17,10 @@ DEPEND=""
 RDEPEND="${DEPEND}
 		games-emulation/libretro-info"
 
+LIBRETRO_CORE_LIB_FILE="${S}"/mame2003_plus_libretro.so
+
+CFLAGS="" # Doesn't compile without this
+
 pkg_preinst() {
 	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
 		first_install="1"

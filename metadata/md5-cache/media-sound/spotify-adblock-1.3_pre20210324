@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prepare
+DEPEND=net-misc/curl
+DESCRIPTION=Spotify adblocker for linux
+EAPI=6
+HOMEPAGE=https://github.com/abba23/spotify-adblock-linux
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=net-misc/curl
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/abba23/spotify-adblock-linux/archive/8e18174885017041f142ade605c270c82a5c21e7.tar.gz -> spotify-adblock-1.3_pre20210324.tar.gz https://cef-builds.spotifycdn.com/cef_binary_88.1.6%2Bg4fe33a1%2Bchromium-88.0.4324.96_linux64_minimal.tar.bz2 -> cef-88.1.6.tar.bz2
+_md5_=24dd5b4da7748e89e2c419de344fdb3f

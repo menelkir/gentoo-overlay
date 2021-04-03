@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_7 )
+PYTHON_COMPAT=( python3_8 )
 inherit distutils-r1
 
 MY_P="${PN}2-${PV}"
@@ -25,7 +25,8 @@ SLOT="2"
 IUSE="dict"
 
 DEPEND=""
-RDEPEND=""
+RDEPEND="net-analyzer/wireshark[tfshark]
+		net-wireless/reaver-wps-fork-t6x"
 PDEPEND="net-wireless/aircrack-ng
 	dev-python/pexpect
 	net-wireless/hcxdumptool

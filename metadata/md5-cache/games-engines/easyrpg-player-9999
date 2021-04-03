@@ -8,5 +8,5 @@ LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=dev-libs/liblcf:0= media-libs/libsdl2:0= media-libs/sdl2-mixer:0= x11-libs/pixman:0= media-libs/libpng:0= sys-libs/zlib:0= media-libs/freetype:2= media-libs/harfbuzz:0= media-sound/mpg123:0= media-sound/wildmidi:0= media-libs/libvorbis:0= media-libs/libsndfile:0= media-libs/speex:0=
 SLOT=0
-_eclasses_=autotools	9988ecbe04129214297a7bbf3d253710	git-r3	3e7ec3d6619213460c85e2aa48398441	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_eclasses_=autotools	4ba6c345bf49883c84d5fa5c9bf40c0b	git-r3	3e7ec3d6619213460c85e2aa48398441	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
 _md5_=90d7bfd7fc7c29a1eeaf32d10142321c

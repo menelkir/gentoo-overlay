@@ -23,6 +23,12 @@ PATCHES=(
         "${FILESDIR}/python.patch"
 )
 
+CFLAGS="" # It'll break without it
+
+src_compile() {
+	use custom-cflags || filter-flags -O*
+	libretro-core_src_compile
+}
 pkg_preinst() {
 	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
 		first_install="1"

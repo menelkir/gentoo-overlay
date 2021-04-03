@@ -18,3 +18,9 @@ DEPEND=""
 RDEPEND="${DEPEND}
 		games-emulation/libretro-info"
 
+CFLAGS="" # Doesn't compile without this
+
+src_compile() {
+#	use custom-cflags || filter-flags -O*
+	libretro-core_src_compile
+}
