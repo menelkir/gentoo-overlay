@@ -6,7 +6,7 @@ EAPI=7
 inherit desktop
 
 DESCRIPTION="Official binary Qt SoulSeek client"
-HOMEPAGE="http://www.soulseekqt.net/"
+HOMEPAGE="https://www.slsknet.org/"
 BINARY_NAME="SoulseekQt-${PV:0:4}-$((${PV:4:2}))-$((${PV:6:2}))"
 SRC_URI="https://www.slsknet.org/SoulseekQT/Linux/${BINARY_NAME}-64bit-appimage.tgz"
 

@@ -19,12 +19,15 @@ DEPEND=""
 RDEPEND="${DEPEND}
 		games-emulation/libretro-info"
 
-# S=${S}/Source/ui_libretro
+S=${S}/Source/ui_libretro
 
 src_configure(){
 	local mycmakeargs=( 
-	-BUILD_LIBRETRO_CORE=ON 
-	-BUILD_PLAY=OFF 
+	-BUILD_LIBRETRO_CORE=ON
+	-BUILD_PLAY=OFF
+	-DBUILD_TESTS=no
+	-DENABLE_AMAZON_S3=no
+	-DCMAKE_BUILD_TYPE="Release"
 )
 	cmake_src_configure
 	eninja

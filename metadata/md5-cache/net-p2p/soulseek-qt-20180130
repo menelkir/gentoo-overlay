@@ -1,7 +1,7 @@
 DEFINED_PHASES=install
 DESCRIPTION=Official binary Qt SoulSeek client
 EAPI=7
-HOMEPAGE=http://www.soulseekqt.net/
+HOMEPAGE=https://www.slsknet.org/
 KEYWORDS=~amd64
 LICENSE=free-noncomm
 RDEPEND=sys-fs/fuse media-libs/libpng x11-libs/libX11 x11-libs/libxcb media-libs/freetype x11-libs/libXau x11-libs/libXdmcp dev-libs/libbsd sys-libs/libselinux dev-libs/expat
@@ -9,4 +9,4 @@ RESTRICT=mirror
 SLOT=0
 SRC_URI=https://www.slsknet.org/SoulseekQT/Linux/SoulseekQt-2018-1-30-64bit-appimage.tgz
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
-_md5_=eff29eb46e821f27c0d29042513d05df
+_md5_=0cc0f761002d0ab4c530188ded905148

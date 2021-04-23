@@ -4,7 +4,7 @@
 EAPI=7
 
 LIBRETRO_REPO_NAME="libretro/SameBoy"
-inherit libretro-core
+inherit git-r3 libretro-core
 
 DESCRIPTION="libretro implementation of SameBoy (Gameboy / Gameboy Color)"
 HOMEPAGE="https://github.com/libretro/SameBoy"

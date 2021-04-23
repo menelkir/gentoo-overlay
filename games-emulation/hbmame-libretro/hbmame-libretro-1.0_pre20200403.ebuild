@@ -19,7 +19,14 @@ DEPEND=""
 RDEPEND="${DEPEND}
 		games-emulation/libretro-info"
 
-PATCHES=(
-        "${FILESDIR}/python.patch"
-)
+#PATCHES=(
+#        "${FILESDIR}/python.patch"
+#)
+
+src_configure() {
+		local mycmakeargs=(
+			PTR64=1
+		)
+		libretro-core_src_compile
+}
 

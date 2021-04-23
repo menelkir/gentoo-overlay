@@ -16,7 +16,3 @@ SLOT="0"
 
 LIBRETRO_CORE_LIB_FILE="${S}/blastem_libretro.so"
 
-src_compile() {
-	use custom-cflags || filter-flags -O*
-	libretro-core_src_compile
-}

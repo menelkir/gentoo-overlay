@@ -6,5 +6,5 @@ HOMEPAGE=https://github.com/libretro/libretro-database
 LICENSE=MIT
 PROPERTIES=live
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	libretro	e2e72840da02ef2a21e935c8447187a8
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	libretro	e2e72840da02ef2a21e935c8447187a8
 _md5_=8ab65143753263edef8115ee41ddd8d0

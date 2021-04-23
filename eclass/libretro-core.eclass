@@ -12,7 +12,7 @@
 # The libretro eclass is designed to streamline the construction of
 # ebuilds for low-level Libretro core ebuilds.
 
-# Workaround for ppsspp
+# Workaroud for ports that doesn't support custom cflags
 if [[ ${PV} == 9999 ]] || [[ ${PN} == "ppsspp-libretro" ]] || [[ ${PN} == "psp1-libretro" ]] || [[ ${PN} == "citra-libretro" ]]; then
 	inherit flag-o-matic git-r3 libretro
 else

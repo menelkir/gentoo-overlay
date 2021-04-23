@@ -2,9 +2,12 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>menelkir@itroll.org</email>
-		<name>Daniel Menelkir</name>
+		<email>audvare@gmail.com</email>
+		<name>Andrew Udvare</name>
 	</maintainer>
-	<longdescription lang="en">
-	</longdescription>
+	<use>
+		<flag name="compat-list">Download compatibility list during build.</flag>
+		<flag name="cubeb">Build with cubeb audio backend</flag>
+		<flag name="web-service">Enable web-serviceds</flag>
+	</use>
 </pkgmetadata>

@@ -6,5 +6,5 @@ HOMEPAGE=https://github.com/libretro/common-shaders
 LICENSE=MIT
 PROPERTIES=live
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
 _md5_=3772afe43f27f9f8cdb60ee4d0a6642d

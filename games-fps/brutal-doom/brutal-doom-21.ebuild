@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="A mod that attempts to make Doom faster placed, harder, gorier and more violent."
 HOMEPAGE="http://www.moddb.com/mods/brutal-doom/"
-SRC_URI="https://www.moddb.com/downloads/mirror/95667/100/b8fb37ddb10c39462f9625533fab59d2 -> brutalv${PV}.rar"
+SRC_URI="https://www.moddb.com/downloads/mirror/95667/115/a0a0f5df02d9b4029ba86a1d53a60338 -> brutalv${PV}.rar"
 
 LICENSE="HPND"
 SLOT="0"
@@ -13,7 +13,7 @@ KEYWORDS="~amd64 ~x86"
 # TODO Add USEs for zdoom and skulltag
 IUSE=""
 
-RDEPEND=">=games-fps/zdoom-2.7.0"
+RDEPEND="games-fps/gzdoom"
 DEPEND="app-arch/unrar"
 
 S="${WORKDIR}"
