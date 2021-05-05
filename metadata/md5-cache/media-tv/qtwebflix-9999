@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=x11-misc/xdg-utils dev-qt/qtwebengine:5
 SLOT=0
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	git-r3	b8e8c92aa5fe8df7187e466138eb4e52	multilib	d410501a125f99ffb560b0c523cd3d1e	qmake-utils	dc74fe3891abc25e80dad5cd3d7c6e47	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
-_md5_=1af79150b5b1d8974292d3457dc56e4a
+_md5_=984b8f354bac63d9a4ae66441b90cbab

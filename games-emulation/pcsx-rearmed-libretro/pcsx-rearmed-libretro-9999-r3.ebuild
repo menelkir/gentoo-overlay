@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -39,12 +39,6 @@ src_compile() {
 src_install() {
 	mv "${S}"/libretro.so "${S}"/${LIBRETRO_CORE_NAME}_libretro.so
 	libretro-core_src_install
-}
-
-pkg_preinst() {
-	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
-		first_install="1"
-	fi
 }
 
 pkg_postinst() {

@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=6
+EAPI=7
 
 # Please report bugs/suggestions on: https://github.com/anyc/steam-overlay
 # or come to #gentoo-gamerlay in freenode IRC
@@ -20,14 +19,12 @@ RDEPEND="
 		games-util/steam-client-meta[steamruntime?]
 		steamruntime? (
 			|| (
-				games-util/steam-games-meta[steamruntime]
 				games-util/esteam
 			)
 		)
 		!steamruntime? (
 			|| (
 				games-util/esteam
-				games-util/steam-games-meta[-steamruntime]
 			)
 		)
 		"

@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Libretro info files required for libretro cores
+EAPI=7
+HOMEPAGE=https://github.com/libretro/libretro-super
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=https://github.com/libretro/libretro-super/archive/8c1538b7782c2171b185b4f1de686eeaf6633797.tar.gz -> libretro-info-1_pre20210428.tar.gz
+_eclasses_=vcs-snapshot	b1abf460a493fc59ebb25de0df3f09dd
+_md5_=e58e0b9b159d58747a2b6a6d02e2c779

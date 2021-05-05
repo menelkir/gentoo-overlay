@@ -1,5 +1,5 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=install preinst unpack
+DEFINED_PHASES=install unpack
 DEPEND=!<=games-emulation/libretro-common-shaders-1
 DESCRIPTION=glsl shaders converted by hand from libretro's common-shaders repo
 EAPI=7
@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=!<=games-emulation/libretro-common-shaders-1
 SLOT=0
 _eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	libretro	e2e72840da02ef2a21e935c8447187a8
-_md5_=6faabd3f56f1922bd51000593337feaf
+_md5_=ce8a6ad05eed0508c6dba82450547129

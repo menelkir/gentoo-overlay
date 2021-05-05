@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_7 python3_8 python3_9 )
 inherit distutils-r1
 
 DESCRIPTION="Python client for the Telegram's tdlib"
-HOMEPAGE="https://github.com/alexander-akhmetov/"
+HOMEPAGE="https://github.com/alexander-akhmetov/python-telegram"
 SRC_URI="https://github.com/alexander-akhmetov/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"

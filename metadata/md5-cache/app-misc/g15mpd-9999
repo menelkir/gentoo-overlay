@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=app-misc/g15daemon dev-libs/libg15 dev-libs/libg15render media-libs/libmpd sys-libs/zlib x11-libs/libX11 x11-libs/libXtst
 SLOT=0
 _eclasses_=autotools	9e63f92c2a5d867fea55ecb160c7d354	gnuconfig	9f91b4b0c84e734a87492d4293f03de5	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
-_md5_=2ea56d12916ac3f541c93dbc38644b39
+_md5_=928dbd747f8e9b33bd664e89135ee95b

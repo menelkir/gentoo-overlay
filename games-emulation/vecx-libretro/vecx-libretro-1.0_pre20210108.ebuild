@@ -1,10 +1,10 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 LIBRETRO_REPO_NAME="libretro/libretro-vecx"
-LIBRETRO_COMMIT_SHA="98bd64b66923f4fc93eb6831f79c4119150bbe80"
+LIBRETRO_COMMIT_SHA="0f3f04b0e5bbb484a84e3416d07f0ae8cdac386e"
 
 inherit libretro-core
 
@@ -18,9 +18,3 @@ SLOT="0"
 DEPEND=""
 RDEPEND="${DEPEND}
 		games-emulation/libretro-info"
-
-pkg_preinst() {
-	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
-		first_install="1"
-	fi
-}

@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=unpack
+DEPEND=net-im/pidgin
+DESCRIPTION=Libpurple (Pidgin) plugin for using Classic Battle.net
+EAPI=7
+HOMEPAGE=https://github.com/dylex/slack-libpurple
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=net-im/pidgin
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=cfdc144d51e322b1e239fa9a6e306e2b

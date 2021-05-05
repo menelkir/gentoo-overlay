@@ -1,13 +1,13 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 LIBRETRO_REPO_NAME="nesbox/TIC-80"
 
-inherit cmake-utils libretro-core toolchain-funcs
+inherit cmake libretro-core toolchain-funcs
 
-DESCRIPTION="Nintendo 3DS for libretro"
+DESCRIPTION="TIC-80 is a fantasy computer for making, playing and sharing tiny games."
 HOMEPAGE="https://github.com/nesbox/TIC-80"
 
 LICENSE="MIT"
@@ -17,10 +17,8 @@ KEYWORDS=""
 RDEPEND=""
 DEPEND="${RDEPEND}"
 
-# S=${WORKDIR}/TIC-80-${LIBRETRO_COMMIT_SHA}
-
 src_prepare() {
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -31,11 +29,11 @@ src_configure() {
 		-DBUILD_DEMO_CARTS=OFF
 		-DBUILD_LIBRETRO=ON
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_compile() {
-	cmake-utils_src_compile
+	cmake_src_compile
 }
 
 src_install() {

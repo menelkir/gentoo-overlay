@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -133,14 +133,14 @@ system-wide \"${VGMPLAY_DIR}\" directory:
 
 To play supported files, run the \"vgm-player\" wrapper:
 
-    # See the \"vgmplay\" manpage for key bindings.
-    vgm-player bubbleman.vgz
+	# See the \"vgmplay\" manpage for key bindings.
+	vgm-player bubbleman.vgz
 
 To convert supported files to another format, pipe the \"vgm2pcm\" command into
 a suitable audio encoder:
 
-    # Convert VGZ to MP3 via \"lame\".
-    vgm2pcm bubbleman.vgz - | lame -r - -
+	# Convert VGZ to MP3 via \"lame\".
+	vgm2pcm bubbleman.vgz - | lame -r - -
 
 VGMPlay is configurable via the system-wide \"${VGMPLAY_CFG_FILE}\" file."
 

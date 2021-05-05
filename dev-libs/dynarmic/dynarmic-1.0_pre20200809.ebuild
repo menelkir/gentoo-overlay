@@ -1,10 +1,10 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 COMMIT_SHA="68ca03e8d4822c78e15315e67ddbb1d6bf4d3827"
 
-inherit cmake-utils vcs-snapshot
+inherit cmake vcs-snapshot
 
 DESCRIPTION="An ARM dynamic recompiler"
 HOMEPAGE="https://github.com/MerryMage/dynarmic"

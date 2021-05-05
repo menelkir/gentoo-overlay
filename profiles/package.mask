@@ -1,15 +1,8 @@
 # Daniel Menelkir <menelkir@itroll.org> 2021-01-27
 # Broken.
-# Consider using an alternative:
-# 	games-emulation/parallel-n64-libretro
-#
-# games-emulation/mupen64next-libretro
-
-# Daniel Menelkir <menelkir@itroll.org> 2021-01-27
-# Broken.
 games-emulation/vitavoyager-libretro
-games-emulation/openlara-libretro
 games-emulation/stonesoup-libretro
+games-emulation/play-libretro
 
 # Daniel Menelkir <menelkir@itroll.org> 2021-01-27
 # Broken (I don't know exactly how to fix it).
@@ -25,5 +18,5 @@ games-emulation/hbmame-libretro
 # Daniel Menelkir <menelkir@itroll.org> 2020-08-10
 # Work in Progress
 #
-games-emulation/play-libretro
 games-emulation/vita3k
+games-emulation/retrovirtualmachine

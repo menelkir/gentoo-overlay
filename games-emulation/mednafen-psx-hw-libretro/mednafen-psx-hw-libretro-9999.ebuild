@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -9,7 +9,7 @@ inherit git-r3 libretro-core
 
 DESCRIPTION="Standalone port/fork of Mednafen PSX to the Libretro API."
 HOMEPAGE="https://github.com/libretro/beetle-psx-libretro"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -24,10 +24,4 @@ src_compile() {
 		HAVE_LIGHTREC=1
 	)
 	libretro-core_src_compile
-}
-
-pkg_preinst() {
-	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
-		first_install="1"
-	fi
 }

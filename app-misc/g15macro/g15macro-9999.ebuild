@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -10,6 +10,7 @@ EGIT_REPO_URI="https://gitlab.com/menelkir/${PN}.git"
 
 LICENSE="GPL-2"
 SLOT="0"
+KEYWORDS=""
 
 DEPEND="app-misc/g15daemon
 	dev-libs/libg15

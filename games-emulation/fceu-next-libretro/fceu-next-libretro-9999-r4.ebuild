@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -6,7 +6,7 @@ EAPI=7
 LIBRETRO_REPO_NAME="libretro/fceu-next"
 inherit libretro-core
 
-DESCRIPTION="libretro implementation of FCEUmm/FCEUX. (Nintendo Entertainment System)"
+DESCRIPTION="Libretro implementation of FCEUmm/FCEUX. (Nintendo Entertainment System)"
 HOMEPAGE="https://github.com/libretro/fceu-next"
 KEYWORDS=""
 
@@ -19,12 +19,6 @@ RDEPEND="${DEPEND}
 
 S="${S}/fceumm-code"
 LIBRETRO_CORE_NAME=fceumm
-
-pkg_preinst() {
-	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
-		first_install="1"
-	fi
-}
 
 pkg_postinst() {
 	if [[ "${first_install}" == "1" ]]; then

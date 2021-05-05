@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -15,8 +15,6 @@ KEYWORDS="~amd64 ~x86"
 LICENSE="GPL-2"
 SLOT="0"
 
-CFLAGS="" # Doesn't compile without this
-
 DEPEND=""
 RDEPEND="${DEPEND}
 		games-emulation/libretro-info"
@@ -24,9 +22,4 @@ RDEPEND="${DEPEND}
 src_configure() {
 	# Skip the ./configure script.
 	true
-}
-
-src_compile() {
-	use custom-cflags || filter-flags -O*
-	libretro-core_src_compile
 }

@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -12,6 +12,7 @@ EGIT_SRC_URI="https://gitlab.com/menelkir/${PN}.git"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="perl static-libs"
+KEYWORDS=""
 
 DEPEND="virtual/libusb:0
 	dev-libs/libg15

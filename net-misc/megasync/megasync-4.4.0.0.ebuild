@@ -24,7 +24,7 @@ fi
 
 LICENSE="MEGA"
 SLOT="0"
-IUSE="+cryptopp +curl +sqlite +zlib dolphin examples freeimage java libressl nautilus php python readline threads thunar"
+IUSE="+cryptopp +curl +sqlite +zlib dolphin examples freeimage java nautilus php python readline threads thunar"
 
 RDEPEND="
 	app-arch/xz-utils
@@ -35,14 +35,8 @@ RDEPEND="
 	net-dns/c-ares
 	x11-themes/hicolor-icon-theme
 	cryptopp? ( dev-libs/crypto++ )
-	curl? (
-		!libressl? ( net-misc/curl[ssl,curl_ssl_openssl] )
-		libressl? ( net-misc/curl[ssl,curl_ssl_libressl] )
-	)
 	dolphin? ( kde-apps/dolphin )
 	freeimage? ( media-libs/freeimage )
-	!libressl? ( dev-libs/openssl:0= )
-	libressl? ( dev-libs/libressl:0= )
 	nautilus? ( >=gnome-base/nautilus-3 )
 	readline? ( sys-libs/readline:0 )
 	sqlite? ( dev-db/sqlite:3 )

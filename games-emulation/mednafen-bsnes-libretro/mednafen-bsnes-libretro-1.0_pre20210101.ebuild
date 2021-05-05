@@ -1,10 +1,10 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 LIBRETRO_REPO_NAME="libretro/beetle-bsnes-libretro"
-LIBRETRO_COMMIT_SHA="b65ded5bde278c18af538c687db9b72c995b220a"
+LIBRETRO_COMMIT_SHA="138854d2ec5ce270f522d670ec48e1aa46b997a2"
 
 inherit libretro-core
 
@@ -20,9 +20,3 @@ RDEPEND="${DEPEND}
 		games-emulation/libretro-info"
 
 LIBRETRO_CORE_NAME=mednafen_snes
-
-pkg_preinst() {
-	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
-		first_install="1"
-	fi
-}

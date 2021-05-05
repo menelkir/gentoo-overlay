@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=unpack
+DEPEND=net-im/pidgin dev-lang/go
+DESCRIPTION=Libpurple (Pidgin) plugin for whatsapp
+EAPI=7
+HOMEPAGE=https://github.com/hoehermann/purple-gowhatsapp
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=net-im/pidgin dev-lang/go
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=ceffc3a9eb77eba6d13f046b9dbc2ae2

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst prepare unpack
+DEPEND=net-misc/wget net-libs/nodejs media-video/ffmpeg dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtgui:5 dev-qt/qtwebengine:5 dev-qt/qtwidgets:5 dev-qt/qtwebchannel:5 dev-qt/qtdeclarative:5 dev-qt/qtquickcontrols:5 dev-qt/qtquickcontrols2:5 dev-qt/qttranslations:5 media-video/mpv[libmpv] dev-libs/openssl
+DESCRIPTION=Watch videos, movies, TV series and TV channels instantly. (Beta Version)
+EAPI=7
+HOMEPAGE=https://www.stremio.com
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=net-misc/wget net-libs/nodejs media-video/ffmpeg dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtgui:5 dev-qt/qtwebengine:5 dev-qt/qtwidgets:5 dev-qt/qtwebchannel:5 dev-qt/qtdeclarative:5 dev-qt/qtquickcontrols:5 dev-qt/qtquickcontrols2:5 dev-qt/qttranslations:5 media-video/mpv[libmpv] dev-libs/openssl
+SLOT=0
+SRC_URI=https://github.com/Stremio/stremio-shell/archive/refs/tags/v4.4.137.tar.gz -> stremio-shell-4.4.137.tar.gz https://github.com/Ivshti/razerchroma/archive/99045142479ba0e2fc3b9cccb72e348c67cd5829.tar.gz -> razerchroma-99045142479ba0e2fc3b9cccb72e348c67cd5829.tar.gz https://github.com/Ivshti/libmpv/archive/b0eae77cf6dc59aaf142b7d079cb13a0904fd3ee.tar.gz -> libmpv-b0eae77cf6dc59aaf142b7d079cb13a0904fd3ee.tar.gz https://github.com/itay-grudev/SingleApplication/archive/aede311d28d20179216c5419b581087be2a8409f.tar.gz -> singleapplcation-aede311d28d20179216c5419b581087be2a8409f.tar.gz https://dl.strem.io/four/v4.4.137/server.js https://dl.strem.io/four/v4.4.137/stremio.asar
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	multilib	d410501a125f99ffb560b0c523cd3d1e	qmake-utils	dc74fe3891abc25e80dad5cd3d7c6e47	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=a34d60ae311c8ddb9b9632abc1177fbd

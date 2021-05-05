@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DEPEND=virtual/udev
+DESCRIPTION=RetroArch joypad autoconfig files
+EAPI=7
+HOMEPAGE=https://github.com/libretro/retroarch-joypad-autoconfig
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=virtual/udev
+RESTRICT=primaryuri
+SLOT=0
+SRC_URI=https://github.com/libretro/retroarch-joypad-autoconfig/archive/aedf93176aac5c1e994c8767181e102857c5f5e4.tar.gz -> retroarch-joypad-autoconfig-1_pre20210430.tar.gz
+_eclasses_=libretro	e2e72840da02ef2a21e935c8447187a8
+_md5_=d625d90a81633adbbb0cefdef6f5ad64

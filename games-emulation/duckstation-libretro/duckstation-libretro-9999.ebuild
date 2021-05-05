@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -13,9 +13,6 @@ KEYWORDS=""
 
 LICENSE="GPL-3"
 SLOT="0"
-
-# Will not build without this
-CFLAGS=""
 
 DEPEND="
 		media-libs/vulkan-loader
@@ -41,4 +38,3 @@ src_install() {
 		insinto "${LIBRETRO_LIB_DIR}"
 		doins "${WORKDIR}/${PF}_build/${LIBRETRO_CORE_NAME}_libretro.so"
 }
-

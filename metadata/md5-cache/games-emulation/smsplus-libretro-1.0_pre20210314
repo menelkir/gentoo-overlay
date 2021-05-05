@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile install preinst prepare unpack
+DEFINED_PHASES=compile install prepare unpack
 DESCRIPTION=Improved port of SMSPlus-GX by gameblabla for libretro
 EAPI=7
 HOMEPAGE=https://github.com/libretro/smsplus-gx
@@ -9,5 +9,5 @@ RDEPEND=games-emulation/libretro-info
 RESTRICT=primaryuri
 SLOT=0
 SRC_URI=https://github.com/libretro/smsplus-gx/archive/53f93019a80cde04c2c50fec25978219fe4650c5.tar.gz -> smsplus-libretro-1.0_pre20210314.tar.gz
-_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	flag-o-matic	c0964e43ba712cb933da5f65b958fa88	l10n	8cdd85e169b835d518bc2fd59f780d8e	libretro	e2e72840da02ef2a21e935c8447187a8	libretro-core	93a389e37a27280d2c7b1da2bb44f96d	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	wrapper	4251d4c84c25f59094fd557e0063a974
-_md5_=2b21294d6102e3f4224f859fe9608bf0
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	flag-o-matic	c0964e43ba712cb933da5f65b958fa88	l10n	8cdd85e169b835d518bc2fd59f780d8e	libretro	e2e72840da02ef2a21e935c8447187a8	libretro-core	211e88b317be26ec37cd001ff487ab42	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	wrapper	4251d4c84c25f59094fd557e0063a974
+_md5_=71dad8633f7035673a872e94dcf210d2

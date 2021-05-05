@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -22,10 +22,4 @@ src_install() {
 	# Remove unnecessary git files
 	[[ ! ${PV} == "1.0_pre"* ]] && rm -r .git
 	cp -R "${S}"/* "${D}/${LIBRETRO_DATA_DIR}"/shaders/
-}
-
-pkg_preinst() {
-	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
-		first_install="1"
-	fi
 }

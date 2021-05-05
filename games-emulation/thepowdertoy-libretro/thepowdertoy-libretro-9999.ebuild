@@ -1,13 +1,13 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 LIBRETRO_REPO_NAME="libretro/ThePowderToy"
 
-inherit cmake-utils libretro-core toolchain-funcs
+inherit cmake libretro-core toolchain-funcs
 
-DESCRIPTION="Nintendo 3DS for libretro"
+DESCRIPTION="A port of The Powder Toy to LibRetro."
 HOMEPAGE="https://github.com/libretro/ThePowderToy"
 
 LICENSE="GPL-3"
@@ -18,18 +18,18 @@ RDEPEND=""
 DEPEND="${RDEPEND}"
 
 src_prepare() {
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_BUILD_TYPE=Release
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_compile() {
-	cmake-utils_src_compile
+	cmake_src_compile
 }
 
 src_install() {

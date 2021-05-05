@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -6,7 +6,7 @@ EAPI=7
 LIBRETRO_REPO_NAME="libretro/ppsspp"
 LIBRETRO_COMMIT_SHA="7b4ddb426bbe9e287bb7f19b0cfaebb4ea0d41d8"
 
-inherit libretro-core
+inherit flag-o-matic git-r3 libretro
 
 DESCRIPTION="libretro implementation of PPSSPP. (PlayStation Portable/PSP)"
 HOMEPAGE="https://github.com/libretro/ppsspp"
@@ -35,6 +35,7 @@ ASSETS_DIR=${LIBRETRO_DATA_DIR}/PPSSPP
 
 src_compile() {
 	use gles2 && append-ldflags -lEGL
+	CUSTOM_LIBRETRO_COMMIT_SHA=$(git -C "${EGIT3_STORE_DIR}/${LIBRETRO_REPO_NAME//\//_}.git" describe --always)
 	myemakeargs=(
 		$(usex gles2 "GLES=1" "")
 	)

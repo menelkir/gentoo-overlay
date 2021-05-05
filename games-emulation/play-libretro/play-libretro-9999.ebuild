@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -21,15 +21,13 @@ RDEPEND="${DEPEND}
 S=${S}/Source/ui_libretro
 
 src_configure(){
-	local mycmakeargs=( 
+	local mycmakeargs=(
 	-BUILD_LIBRETRO_CORE=ON
 	-BUILD_PLAY=OFF
 	-DBUILD_TESTS=no
 	-DENABLE_AMAZON_S3=no
 	-DCMAKE_BUILD_TYPE="Release"
 )
-	cmake_src_compile
+	# cmake_src_compile
 	libretro-core_src_compile
 }
-
-

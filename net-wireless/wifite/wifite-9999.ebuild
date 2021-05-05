@@ -1,19 +1,19 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_8 )
+PYTHON_COMPAT=( python3_{8,9} )
 inherit distutils-r1
 
 MY_P="${PN}2-${PV}"
 
 if [[ ${PV} == "9999" ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/derv82/wifite2.git"
+	EGIT_REPO_URI="https://github.com/kimocoder/wifite2.git"
 else
-	SRC_URI="https://github.com/derv82/wifite2/archive/${PV}.tar.gz -> ${MY_P}.tar.gz"
-	KEYWORDS="~amd64 ~arm ~x86"
+	SRC_URI="https://github.com/kimocoder/wifite2/archive/${PV}.tar.gz -> ${MY_P}.tar.gz"
+	KEYWORDS="amd64 x86"
 	S="${WORKDIR}/${MY_P}"
 fi
 
@@ -22,13 +22,18 @@ HOMEPAGE="https://github.com/derv82/wifite2"
 
 LICENSE="GPL-2"
 SLOT="2"
-IUSE="dict"
+IUSE="dict opencl extra"
 
-DEPEND=""
-RDEPEND="net-analyzer/wireshark[tfshark]
-		net-wireless/reaver-wps-fork-t6x"
-PDEPEND="net-wireless/aircrack-ng
-	dev-python/pexpect
+DEPEND="net-wireless/aircrack-ng[${PYTHON_USEDEP}]
 	net-wireless/hcxdumptool
 	net-wireless/hcxtools
-	dict? ( sys-apps/cracklib-words )"
+	opencl? ( app-crypt/hashcat )
+	dict? ( sys-apps/cracklib-words )
+	extra? ( net-analyzer/wireshark
+		net-wireless/reaver-wps-fork-t6x
+		!net-wireless/reaver
+		net-wireless/bully
+		net-wireless/cowpatty
+		net-analyzer/macchanger
+	)"
+RDEPEND="${DEPEND}"

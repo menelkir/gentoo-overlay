@@ -1,10 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-#DISTUTILS_USE_SETUPTOOLS=bdepend
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{8,9} )
 inherit distutils-r1
 
 MY_P="${PN}2-${PV}"
@@ -25,12 +24,10 @@ LICENSE="GPL-2"
 SLOT="2"
 IUSE="dict opencl extra"
 
-DEPEND=""
-RDEPEND=""
-PDEPEND="net-wireless/aircrack-ng[${PYTHON_USEDEP}]
+DEPEND="net-wireless/aircrack-ng[${PYTHON_USEDEP}]
 	net-wireless/hcxdumptool
 	net-wireless/hcxtools
-	amd64? ( opencl? ( app-crypt/hashcat ) )
+	opencl? ( app-crypt/hashcat )
 	dict? ( sys-apps/cracklib-words )
 	extra? ( net-analyzer/wireshark
 		net-wireless/reaver-wps-fork-t6x
@@ -39,6 +36,4 @@ PDEPEND="net-wireless/aircrack-ng[${PYTHON_USEDEP}]
 		net-wireless/cowpatty
 		net-analyzer/macchanger
 	)"
-
-#python2 only:
-#net-wireless/pyrit[${PYTHON_USEDEP},opencl?]
+RDEPEND="${DEPEND}"

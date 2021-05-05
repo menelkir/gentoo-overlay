@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=unpack
+DEPEND=net-im/pidgin
+DESCRIPTION=Libpurple (Pidgin) plugin for Battle.net
+EAPI=7
+HOMEPAGE=https://github.com/EionRobb/purple-battlenet
+LICENSE=GPL-3+
+PROPERTIES=live
+RDEPEND=net-im/pidgin
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=8af88eee23384667b12e200ba98d6f0f

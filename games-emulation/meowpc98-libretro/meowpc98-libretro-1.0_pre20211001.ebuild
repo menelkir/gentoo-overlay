@@ -1,10 +1,10 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 LIBRETRO_REPO_NAME="libretro/libretro-meowPC98"
-LIBRETRO_COMMIT_SHA="cc25d911e2246a2377e02290a4a2fc344bb03bc2"
+LIBRETRO_COMMIT_SHA="cd389b3490d5048873c40edd949a1b0631e0606d"
 
 inherit libretro-core
 
@@ -22,9 +22,3 @@ RDEPEND="${DEPEND}
 S="${S}/libretro"
 
 LIBRETRO_CORE_NAME="nekop2"
-
-pkg_preinst() {
-	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
-		first_install="1"
-	fi
-}

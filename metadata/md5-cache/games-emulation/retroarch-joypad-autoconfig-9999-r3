@@ -1,5 +1,5 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=install preinst unpack
+DEFINED_PHASES=install unpack
 DEPEND=virtual/udev
 DESCRIPTION=RetroArch joypad autoconfig files
 EAPI=7
@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=virtual/udev
 SLOT=0
 _eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	libretro	e2e72840da02ef2a21e935c8447187a8
-_md5_=192c009a90cca704c9c600001057f650
+_md5_=956823d42dbdfabf5a87fa67c010556e

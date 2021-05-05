@@ -8,13 +8,12 @@ If you test with a different keyword and it works, let me know so I update the e
 There's ebuilds maded by myself and other gathered from the internet and maded
 some personal modifications. The follow repositories was used (sorry if I forgot something):
 
-:Steam-Overlay: https://github.com/anyc/steam-overlay
 :Gamerlay: https://cgit.gentoo.org/proj/gamerlay.git
-:Pentoo: https://github.com/pentoo/pentoo-overlay
-:Vortex: https://github.com/nE0sIghT/vortex-overlay
 :Guru: https://wiki.gentoo.org/wiki/Project:GURU
-:PF4Public: https://github.com/PF4Public/gentoo-overlay
+:Pentoo: https://github.com/pentoo/pentoo-overlay
+:Steam-Overlay: https://github.com/anyc/steam-overlay
 :tatsh-overlay: https://github.com/tatsh/tatsh-overlay
+:winny-: https://github.com/winny-/winny-overlay
 
 =================================
 How to Contribute to this Overlay

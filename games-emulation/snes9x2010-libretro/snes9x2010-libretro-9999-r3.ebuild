@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -22,10 +22,4 @@ src_install() {
 	insinto "${LIBRETRO_DATA_DIR}"/snes9x2010_libretro
 	doins "${S}"/docs/snes9x-license.txt
 	libretro-core_src_install
-}
-
-pkg_preinst() {
-	if ! has_version "=${CATEGORY}/${PN}-${PVR}"; then
-		first_install="1"
-	fi
 }
